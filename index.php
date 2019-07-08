@@ -10,7 +10,7 @@ inc([
 ]);
 error(true);
 $route=segment(1);
-if($route=='/'){
+if($route=='/' OR empty($route)){
     $route='mensagem';
 }
 $filename=ROOT.'call/call.json';
